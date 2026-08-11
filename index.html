@@ -6,6 +6,27 @@
 
   <title>Trulancer Typing Job | Work From Home</title>
 
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1369958195202154');
+  fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1369958195202154&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
     * {
       margin: 0;
@@ -111,74 +132,56 @@
     .card p {
       color: #666;
       line-height: 1.5;
-      font-size: 14px;
+      font-size: 15px;
     }
 
-    .cta {
-      background: #111;
-      color: #fff;
-      padding: 35px 20px;
-      border-radius: 20px;
-      text-align: center;
-      margin-top: 25px;
-    }
-
-    .cta h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .cta p {
-      color: #ddd;
-      margin-bottom: 22px;
-    }
-
+    /* Telegram Button */
     .telegram-btn {
       display: inline-block;
-      text-decoration: none;
-      background: #ffd900;
-      color: #111;
+      margin-top: 28px;
       padding: 16px 35px;
+      background: #111;
+      color: #ffd900;
+      text-decoration: none;
       border-radius: 50px;
       font-size: 18px;
       font-weight: bold;
       transition: 0.3s;
-      box-shadow: 0 5px 15px rgba(255,217,0,0.3);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
 
     .telegram-btn:hover {
       transform: translateY(-3px);
-      background: #fff;
+      background: #222;
     }
 
-    .notice {
-      background: #fff7c2;
-      border-left: 5px solid #111;
-      padding: 18px;
-      margin-top: 25px;
-      border-radius: 10px;
-      font-size: 14px;
-      line-height: 1.6;
+    .telegram-btn:active {
+      transform: scale(0.97);
     }
 
     footer {
       text-align: center;
       padding: 25px 10px;
-      font-size: 13px;
       color: #222;
+      font-size: 14px;
     }
 
+    /* Mobile Responsive */
     @media (max-width: 768px) {
       .features {
         grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 24px;
       }
 
       .hero h2 {
         font-size: 30px;
       }
 
-      header h1 {
-        font-size: 24px;
+      .hero p {
+        font-size: 16px;
       }
     }
   </style>
@@ -190,86 +193,78 @@
 
     <header>
       <h1>Trulancer Typing Job</h1>
-      <p>Work From Home • Typing Work • Flexible Opportunity</p>
+      <p>Work From Home • Flexible Working Opportunity</p>
     </header>
 
     <section class="hero">
 
-      <div class="badge">WORK FROM HOME</div>
+      <div class="badge">💻 WORK FROM HOME</div>
 
       <h2>
-        Start Your <span>Typing Job</span> Journey
+        Start Your <span>Typing Work</span> From Home
       </h2>
 
       <p>
-        Looking for typing work from home?
-        Get updates, job information and joining details
+        Looking for a flexible typing work opportunity?
+        Get the latest information, updates and work details
         through our Telegram channel.
       </p>
 
-      <div class="notice">
-        <strong>Important:</strong> Please check the available job
-        details and requirements carefully before joining or applying.
+      <div class="features">
+
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>Typing Work</h3>
+          <p>
+            Work on typing-related tasks from the comfort of your home.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏠</div>
+          <h3>Work From Home</h3>
+          <p>
+            Flexible work option that can be accessed from home.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>Get Updates</h3>
+          <p>
+            Join our Telegram channel for the latest work information.
+          </p>
+        </div>
+
       </div>
 
-    </section>
-
-    <section class="features">
-
-      <div class="card">
-        <div class="icon">💻</div>
-        <h3>Typing Work</h3>
-        <p>
-          Explore typing-related work opportunities
-          from your home.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🏠</div>
-        <h3>Work From Home</h3>
-        <p>
-          Access information about remote work
-          opportunities.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">📲</div>
-        <h3>Telegram Updates</h3>
-        <p>
-          Join the Telegram channel to receive
-          the latest updates.
-        </p>
-      </div>
-
-    </section>
-
-    <section class="cta">
-
-      <h2>Join Our Telegram Channel</h2>
-
-      <p>
-        Click the button below to get job updates
-        and further information.
-      </p>
-
+      <!-- JOIN NOW TELEGRAM BUTTON -->
       <a
-        class="telegram-btn"
         href="https://t.me/+urM-nkZEOvUxNzc1"
+        class="telegram-btn"
+        id="telegramButton"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        📲 Join Now on Telegram
+        onclick="trackTelegramClick()">
+        JOIN NOW TELEGRAM
       </a>
 
     </section>
 
     <footer>
-      © 2026 Trulancer Typing Job • Work From Home
+      © 2026 Trulancer Typing Job. All Rights Reserved.
     </footer>
 
   </div>
+
+  <!-- Telegram Button Meta Pixel Tracking -->
+  <script>
+    function trackTelegramClick() {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+    }
+  </script>
 
 </body>
 </html>
